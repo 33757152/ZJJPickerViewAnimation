@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		8937521A1F4426AD00C2B76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 893752191F4426AD00C2B76F /* main.m */; };
 		8937521D1F4426AD00C2B76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937521C1F4426AD00C2B76F /* AppDelegate.m */; };
-		893752201F4426AD00C2B76F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8937521F1F4426AD00C2B76F /* ViewController.m */; };
 		893752231F4426AD00C2B76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893752211F4426AD00C2B76F /* Main.storyboard */; };
 		893752251F4426AD00C2B76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893752241F4426AD00C2B76F /* Assets.xcassets */; };
 		893752281F4426AD00C2B76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893752261F4426AD00C2B76F /* LaunchScreen.storyboard */; };
+		893752321F44279A00C2B76F /* ZJJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893752311F44279A00C2B76F /* ZJJHomeViewController.m */; };
+		893752351F4427A600C2B76F /* ZJJPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893752341F4427A600C2B76F /* ZJJPersonalViewController.m */; };
+		893752391F443BB000C2B76F /* ZJJCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 893752381F443BB000C2B76F /* ZJJCustomPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		893752191F4426AD00C2B76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8937521B1F4426AD00C2B76F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8937521C1F4426AD00C2B76F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8937521E1F4426AD00C2B76F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8937521F1F4426AD00C2B76F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		893752221F4426AD00C2B76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		893752241F4426AD00C2B76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		893752271F4426AD00C2B76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		893752291F4426AD00C2B76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893752301F44279A00C2B76F /* ZJJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJHomeViewController.h; sourceTree = "<group>"; };
+		893752311F44279A00C2B76F /* ZJJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJHomeViewController.m; sourceTree = "<group>"; };
+		893752331F4427A600C2B76F /* ZJJPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJPersonalViewController.h; sourceTree = "<group>"; };
+		893752341F4427A600C2B76F /* ZJJPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJPersonalViewController.m; sourceTree = "<group>"; };
+		893752371F443BB000C2B76F /* ZJJCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJCustomPickerView.h; sourceTree = "<group>"; };
+		893752381F443BB000C2B76F /* ZJJCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJCustomPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,10 @@
 		893752171F4426AD00C2B76F /* ZJJPickerViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				893752361F443B6600C2B76F /* View */,
+				8937522F1F44278000C2B76F /* VC */,
 				8937521B1F4426AD00C2B76F /* AppDelegate.h */,
 				8937521C1F4426AD00C2B76F /* AppDelegate.m */,
-				8937521E1F4426AD00C2B76F /* ViewController.h */,
-				8937521F1F4426AD00C2B76F /* ViewController.m */,
 				893752211F4426AD00C2B76F /* Main.storyboard */,
 				893752241F4426AD00C2B76F /* Assets.xcassets */,
 				893752261F4426AD00C2B76F /* LaunchScreen.storyboard */,
@@ -77,6 +83,26 @@
 				893752191F4426AD00C2B76F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8937522F1F44278000C2B76F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				893752301F44279A00C2B76F /* ZJJHomeViewController.h */,
+				893752311F44279A00C2B76F /* ZJJHomeViewController.m */,
+				893752331F4427A600C2B76F /* ZJJPersonalViewController.h */,
+				893752341F4427A600C2B76F /* ZJJPersonalViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		893752361F443B6600C2B76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				893752371F443BB000C2B76F /* ZJJCustomPickerView.h */,
+				893752381F443BB000C2B76F /* ZJJCustomPickerView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893752201F4426AD00C2B76F /* ViewController.m in Sources */,
+				893752321F44279A00C2B76F /* ZJJHomeViewController.m in Sources */,
 				8937521D1F4426AD00C2B76F /* AppDelegate.m in Sources */,
 				8937521A1F4426AD00C2B76F /* main.m in Sources */,
+				893752351F4427A600C2B76F /* ZJJPersonalViewController.m in Sources */,
+				893752391F443BB000C2B76F /* ZJJCustomPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

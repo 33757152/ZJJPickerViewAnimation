@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ZJJHomeViewController.h"
+#import "ZJJPersonalViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +19,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self setRootVC];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
+- (void)setRootVC {
+    UITabBarController *tabbar = [[UITabBarController alloc] init];
+    
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:[[ZJJHomeViewController alloc] init]];
+    homeNav.tabBarItem.title = @"首页";
+    
+    UINavigationController *personNav = [[UINavigationController alloc] initWithRootViewController:[[ZJJPersonalViewController alloc] init]];
+    personNav.tabBarItem.title = @"个人";
+    
+    tabbar.viewControllers = @[homeNav,personNav];
+    self.window.rootViewController = tabbar;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
