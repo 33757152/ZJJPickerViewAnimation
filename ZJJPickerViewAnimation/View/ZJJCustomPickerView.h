@@ -18,6 +18,6 @@ typedef void(^PassPickSelected)(NSString *string);
  *allColumnsArray = @[@[第一列内容],@[第二列内容],...];
  */
 @property (nonatomic, strong) NSArray *allColumnsArray;
-@property (nonatomic, assign) PassPickSelected passString;
+@property (nonatomic, copy) PassPickSelected passString;
 
 @end
